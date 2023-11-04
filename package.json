@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "index.html"
+    "dev": "browser-sync start --server --files 'index.html'",
+    "start": "index.html"
   },
   "keywords": [],
   "author": "",
