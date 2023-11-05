@@ -1,0 +1,25 @@
+body {
+  display: flex;
+  background-color: #24282F;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+#image-container {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+#main-img {
+  width: 153.5%;
+  height: auto;
+  display: block;
+  position: relative;
+  margin: -9% -21.1% 0 -21.1%;
+  opacity: 0.4;
+}
+
+/*# sourceMappingURL=main.css.map */
