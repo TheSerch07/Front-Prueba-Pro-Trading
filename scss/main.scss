@@ -11,7 +11,7 @@ body {
     margin: 0 auto;
     position: relative;
     overflow: hidden;
-  }
+}
   
 #main-img {
     width: 153.5%;
@@ -21,4 +21,10 @@ body {
     margin: -9% -21.1% 0 -21.1%;
     opacity: 0.4;
 }
-  
+
+h1 {
+    font-size: 15vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #FFFFFF;
+}
