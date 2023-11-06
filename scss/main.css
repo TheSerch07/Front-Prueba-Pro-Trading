@@ -27,6 +27,8 @@ h1 {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   color: #FFFFFF;
+  position: absolute;
+  padding-top: 29vw;
 }
 
 /*# sourceMappingURL=main.css.map */
