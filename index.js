@@ -33,8 +33,8 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function truncateSpecies(species) {
-        if (species.length > 8) {
-            return species.slice(0, 6) + "...";
+        if (species.length > 6) {
+            return species.slice(0, 4) + "...";
         } else {
             return species;
         }
@@ -63,6 +63,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         const statusCircleClass = getStatusCircleClass(character.status);
                         const truncatedName = truncateName(character.name);
                         const truncatedLocation = truncateLocation(character.location.name);
+                        const truncatedSpecies = truncateSpecies(character.species)
     
                         container.innerHTML += `
                             <div class="character">
@@ -71,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <div class="text-container">
                                     <div class="alive-container">
                                         <div class="status-circle ${statusCircleClass}"></div>
-                                        <p>${character.status} - ${character.species}</p>
+                                        <p>${character.status} - ${truncatedSpecies}</p>
                                     </div>
                                     <div class="location-container">
                                         <img class="icon-location" src="./assets/619.png" />
@@ -99,6 +100,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 const statusCircleClass = getStatusCircleClass(data.status);
                 const truncatedName = truncateName(data.name);
                 const truncatedLocation = truncateLocation(data.location.name);
+                const truncatedSpecies = truncateSpecies(data.species)
     
                 // Verifica si el personaje ya existe en el array antes de agregarlo
                 if (!characters.some(char => char.id === data.id)) {
@@ -111,7 +113,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             <div class="text-container">
                                 <div class="alive-container">
                                     <div class="status-circle ${statusCircleClass}"></div>
-                                    <p>${data.status} - ${data.species}</p>
+                                    <p>${data.status} - ${truncatedSpecies}</p>
                                 </div>
                                 <div class="location-container">
                                     <img class="icon-location" src="./assets/619.png" />
