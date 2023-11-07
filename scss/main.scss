@@ -155,6 +155,10 @@ button {
     border: 0;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 @media (min-width: 993px) {
     header {
         z-index: 2;
