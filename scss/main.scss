@@ -8,6 +8,7 @@ body {
 }
 
 header {
+    z-index: 2;
     display: flex;
     justify-content: center;
     width: 100vw;
@@ -65,3 +66,75 @@ h1 {
     position: absolute;
     padding-top: 29vw;
 }
+
+#character-list {
+    z-index: 1;
+    margin-top: 4vw;
+    height: auto;
+    width: 82vw;
+}
+
+.character {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 488px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #3C3E44;
+    border-radius: 6vw;
+    margin-bottom: 30px;
+    overflow: hidden;
+
+
+    img {
+        height: 348px;
+    }
+
+    h2 {
+        width: 87%;
+        margin: 10px 0 0 0;
+        color: #FFFFFF;
+        font-size: 43px;
+    }
+
+    p {
+        font-size: 14px;
+        color: #11B0C8;
+    }
+
+    .icon-location {
+        margin-right: 7px;
+        width: 17px;
+        height: auto;
+        filter: invert(100%);
+    }
+
+    .text-container {
+        width: 85%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .alive-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .location-container {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.status-circle {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    margin-right: 7px;
+}
+
+.alive { background-color: #16E21E; }
+.dead { background-color: #FF0000; }
+.unknown { background-color: #FFFFFF; }
