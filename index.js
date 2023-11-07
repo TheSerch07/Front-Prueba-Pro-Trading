@@ -129,7 +129,18 @@ document.addEventListener("DOMContentLoaded", function() {
             });
     }
 
-    getCharacterData(1, "character-list");
-    getCharacterData(2, "character-list");
-    getCharacterData(3, "character-list");
+    const screenWidth = window.innerWidth;
+
+    // Cargar 3 o 6 personajes inicialmente según el ancho de la pantalla
+    if (screenWidth > 993) {
+        // Si la pantalla es más ancha que 1200px, carga 6 personajes
+        for (let i = 1; i <= 6; i++) {
+            getCharacterData(i, "character-list");
+        }
+    } else {
+        // Si la pantalla es más estrecha o igual a 1200px, carga 3 personajes
+        for (let i = 1; i <= 3; i++) {
+            getCharacterData(i, "character-list");
+        }
+    }
 });
