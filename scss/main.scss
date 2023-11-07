@@ -40,6 +40,10 @@ header {
         font-weight: 600;
         font-size: 4.19vw;
     }
+
+    span:hover {
+        cursor: pointer;
+    }
 }
 
 #image-container {
@@ -138,3 +142,15 @@ h1 {
 .alive { background-color: #16E21E; }
 .dead { background-color: #FF0000; }
 .unknown { background-color: #FFFFFF; }
+
+button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    background-color: #11B0C8;
+    color: #FFFFFF;
+    width: 82vw;
+    height: 66px;
+    margin-bottom: 110px;
+    border-radius: 6vw;
+    border: 0;
+}

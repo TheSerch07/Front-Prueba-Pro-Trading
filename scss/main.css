@@ -39,6 +39,9 @@ header span {
   font-weight: 600;
   font-size: 4.19vw;
 }
+header span:hover {
+  cursor: pointer;
+}
 
 #image-container {
   width: 100%;
@@ -135,6 +138,18 @@ h1 {
 
 .unknown {
   background-color: #FFFFFF;
+}
+
+button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  background-color: #11B0C8;
+  color: #FFFFFF;
+  width: 82vw;
+  height: 66px;
+  margin-bottom: 110px;
+  border-radius: 6vw;
+  border: 0;
 }
 
 /*# sourceMappingURL=main.css.map */
